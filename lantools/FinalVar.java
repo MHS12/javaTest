@@ -11,6 +11,7 @@ public class FinalVar {
 
     public String ip;
     public int port;
+
     FileHandle filehandle;
 
     public FinalVar() {
@@ -33,7 +34,7 @@ public class FinalVar {
             else
                 return Integer.parseInt(crypo.decode(port));
         } catch (Exception e) {
-            setPort(8040);
+            setPort(8080);
             return port;
         }
         
